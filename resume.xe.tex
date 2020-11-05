@@ -1,0 +1,548 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{friggeri-cv}
+
+\usepackage{graphicx}
+\graphicspath{{figures/} {screenshots/}}
+
+\hypersetup{hidelinks=true}
+\urlstyle{rm}
+
+\addbibresource{resume.bib}
+
+\newif\ifselectedprojects
+\newif\ifsignature
+\selectedprojectstrue
+%\signaturetrue
+
+\begin{document}
+
+\header{josé}{devezas}{graph-based entity-oriented search}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\includegraphics[width=\textwidth]{photo.jpg}
+%
+\section{contact}
+Porto, Portugal
+%+351 939 828 043
+~
+{\footnotesize \href{mailto:joseluisdevezas@gmail.com}{joseluisdevezas@gmail.com}
+\href{http://www.josedevezas.com}{http://www.josedevezas.com} %
+LinkedIn: \href{http://pt.linkedin.com/in/jldevezas/en}{jldevezas}}
+%
+\section{languages}
+Portuguese (native)
+English (fluent)
+%
+\section{programming}
+{\color{red} $\varheartsuit$} Python, R, SQL, Java, C\#, Scala, Rust, Gremlin, HTML, CSS, JavaScript
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2016--Now}
+{Doctoral Program {\normalfont in Computer Science (MAP-i)}}
+{U.Porto, UA, UMinho}
+{Classification (1st year): 19 (out of 20)\\[.5ex]
+\emph{Graph-Based Entity-Oriented Search}\\[.5ex]
+Thesis statement:\\
+A graph-based joint representation of unstructured and structured data has the potential to unlock novel ranking strategies, that are, in turn, able to support the generalization of entity-oriented search tasks and to improve overall retrieval effectiveness by incorporating explicit and implicit information derived from the relations between text found in corpora and entities found in knowledge bases.\\[-.75em]
+
+During the course of this doctoral work, two main systems were developed: ANT, an entity-oriented search engine for the University of Porto (prototype); and Army ANT, a workbench for innovation in entity-oriented search.\\[-.75em]
+
+\url{https://ant.fe.up.pt/}\\
+\url{https://github.com/feup-infolab/ant}\\[-.75em]
+
+\url{https://github.com/feup-infolab/army-ant}\\
+\url{https://github.com/feup-infolab/army-ant-install}\\
+\url{https://hub.docker.com/repository/docker/jldevezas/army-ant}}
+%------------------------------------------------
+%------------------------------------------------
+\entry
+{2003--2010}
+{Master {\normalfont in Informatics and Computing Engineering}}
+{U.Porto}
+{Classification: 14 (out of 20)\\[.5ex]
+\emph{Link Ecosystem of the Portuguese Blogosphere}\\[.5ex]
+This thesis explored the blogosphere as an ecosystem of blogs comprised not only of a set of posts and their
+individual content, but also of the interactions established through the hyperlinks connecting the posts. Based on
+this study, we discovered a correlation between the blog's centrality and the length and number of posts.\\[.5ex]
+Thesis Classification: 18 (out of 20)}
+%------------------------------------------------
+\entry
+{2000--2003}
+{Technological Specialization {\normalfont in Informatics}}
+{Colégio de Gaia}
+{Classification: 18 (out of 20)}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2016--2020}
+{CSIG, INESC TEC}
+{Porto, Portugal}
+{\emph{Researcher / PhD Student}\\
+MAP-i PhD student and FCT grant holder, working on entity-oriented search. Former FourEyes researcher with a focus on studying information consumption on social media. Provided support to the research group through data engineering, by developing the infrastructure for Twitter data collection and analysis, as well as news collection and archiving.}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015--2020}
+{INFORMATION SYSTEMS LABORATORY, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Researcher / PhD Student}\\
+MAP-i PhD student and FCT grant holder, working on entity-oriented search. Research and development of the ANT entity-oriented search engine. Particularly focused on query analysis methodologies, as well as the construction of specialized indexes and ontologies for efficient and effective question-answering through contextual widgets. The produced system was also aimed at providing a platform able to support the academic community with the experimentation of search engines backed by linked data.}
+%------------------------------------------------
+\entry
+{2017--2018}
+{FACULTY OF ENGINEERING, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Invited Assistant}\\
+Lectured one semester on social network analysis, for the Information Management in Social Networks course, at the Master in Information Science, and one semester on relational and document databases, for the Databases course, at the Master in Informatics and Computing Engineering.}
+%------------------------------------------------
+\entry
+{2014--2015}
+{INTERRELATE}
+{Porto, Portugal}
+{\emph{Software Engineer / Data Scientist}\\[0.3em]
+{\normalsize \emph{Data Science:}}
+\vspace{0.175em}
+{\normalsize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Collection and analysis of several types of data, mainly originating from the web, particularly from social media.
+  \item Highly proficient in R, Python and SQL (from data collection to reporting), including topic tracking, outlier and anomaly detection, statistical smoothing, regression, classification, clustering and network analysis.
+  \item Skilled in dynamic reporting.
+  \item Developed several data visualization widgets.
+  \item Analyzed social networks and other graphs.
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Software Engineering:}}
+\vspace{0.175em}
+{\normalsize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Software design of web applications and analytics pipelines.
+  \item Technology evaluation and selection.
+  \item Supporting the team with new technologies or languages.
+  \item INTERRELATE Backoffice:
+    \begin{itemize}
+      \item Devising strategies for automatic and periodical data collection and information extraction from unstructured user-generated content;
+      \item Systems integration, including team coordination (4 person project).
+    \end{itemize}
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Programming:}}
+\vspace{0.175em}
+{\normalsize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Worked in nearly every company project, using various different languages.
+  \item Developed several web applications and web services.
+  \item INTERRELATE Backoffice:
+    \begin{itemize}
+      \item Web crawler development;
+      \item Development of data visualization widgets for internal statistics;
+      \item Front-end design and development.
+    \end{itemize}
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Sysadmin:}}
+\vspace{0.175em}
+{\normalsize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Manage the company servers, including security, backups and product deploys.
+  \item Maintain firewall rules and SMTP server.
+  \item DNS configurations (including SPF, for SPAM control).
+  \item Nginx configurations.
+  \item Company services maintenance (internal and external).
+  \item Log monitoring and bug reporting.
+  \item Real-time e-mail log error monitoring for critical systems and web service mobile monitoring for downtime or connection issues.
+  \item Support Ticket System configuration.
+  \item PayPal payment services.
+\end{itemize}}}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2012--2013}
+{SAPO LABS, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Researcher / Developer}\\
+Research and development of music discovery and recommendation techniques supported on a graph-based neighborhood approach, as well as on latent factor models based on matrix factorization algorithms. Development of methodologies to combine knowledge from different dimensions, including not only user profile, content and context features, but also social features, such as community structure. Related tasks required work on data mining, multimodal network analysis and community detection, and information retrieval.}
+%------------------------------------------------
+\entry
+{2011--2012}
+{CRACS, INESC TEC}
+{Porto, Portugal}
+{\emph{Researcher / Developer}\\
+Enhancement, adaptation and implementation of state of the art algorithms for network analysis, data mining and data visualization, in the context of intelligent information systems for cyber journalism, as part of the Breadcrumbs Project (UTA-Est/MAI/0007/2009).}
+%------------------------------------------------
+\entry
+{2010-2011}
+{SAPO LABS, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Researcher / Developer}\\
+Work in the areas of data mining, network analysis, community detection, information retrieval, real-time data analytics and data visualization.}
+%------------------------------------------------
+\entry
+{2002-2003}
+{NPF PORTUGUESE FREEBSD GROUP - npf.pt.freebsd.org}
+{Coimbra, Portugal}
+{\emph{Documentation / Programming}\\
+Translation of the official FreeBSD documentation to portuguese, creation of how-to guides in portuguese, porting open source applications to FreeBSD and programming and content management of a hints widget.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2012}
+{Certificate of Merit}
+{The 2012 IAENG International Conference on Data Mining and Applications}
+{Awarded to the best papers published in the conference.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{communication skills}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2020}
+{Demo}
+{European Conference on Information Retrieval}
+{Prepared a video demonstration of the Army ANT system, which was exhibited during the online event, with a slot reserved for questions.}
+%------------------------------------------------
+\entry
+{2020}
+{Doctoral Consortium}
+{European Conference on Information Retrieval}
+{Participated in the doctoral consortium, presenting graph-based entity-oriented search as a unified framework in information retrieval.}
+%------------------------------------------------
+\entry
+{2020}
+{Lecture}
+{Software Systems Architecture course, at the Master in Informatics and Computing Engineering}
+{Described ANT search engine's system architecture, focusing on the requirements of an entity-oriented search engine.}
+%------------------------------------------------
+\entry
+{2019}
+{Presentation}
+{Symposium on Languages, Applications and Technologies}
+{Presented the graph-of-entity representation and retrieval model for entity-oriented search over combined data.}
+%------------------------------------------------
+\entry
+{2019}
+{Invited Speaker}
+{Creative CoLAB 2019}
+{Introduced several concepts about hypergraphs, arguing about their generality, and presented an approach to mapping terms and entities with hypergraphs, which could be used to universally solve multiple entity-oriented search tasks.}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2018}
+{Lecture}
+{Information Description, Storage and Retrieval course, at the Master in Informatics and Computing Engineering}
+{Described ANT search engine's system architecture, introducing several technical aspects of the building of an entity-oriented search engine.}
+%------------------------------------------------
+\entry
+{2018}
+{Workshop}
+{IEEE Student and Young Professional Congress}
+{Presented ANT, focusing on its query understanding algorithm, based on the Score Hypergraph, as well as and Army ANT, showing how it an be used to research entity-oriented search.}
+%------------------------------------------------
+\entry
+{2017}
+{Presentation}
+{Symposium on Languages, Applications and Technologies}
+{Presented a complete pipeline, from data acquisition, passing through information extraction and the automatic construction of knowledge base, to an information retrieval implementation.}
+%------------------------------------------------
+\entry
+{2013}
+{Presentation}
+{DEI, FEUP}
+{Did a short presentation on the Juggle project for the department, in the context of DEI Talks.}
+%------------------------------------------------
+\entry
+{2013}
+{Presentation}
+{SAPO}
+{Presented the Juggle project, including the developed graph-based recommendation algorithms, for the SAPO
+technical team.}
+%------------------------------------------------
+\entry
+{2012}
+{Presentation}
+{International Conference on Knowledge Discovery and Information Retrieval}
+{Presented an interactive news clips visualization tool for applications in journalistic research and knowledge discovery.}
+%------------------------------------------------
+\entry
+{2012}
+{Presentation}
+{IAENG International Conference on Data Mining and Applications}
+{Presented a methodology, based on community detection in multidimensional networks, for the creation of news context from a folksonomy of web clipping.}
+%------------------------------------------------
+\entry
+{2011}
+{Poster}
+{International AAAI Conference on Weblogs and Social Media}
+{Presented research work on using the h-index to estimate blog authority.}
+%------------------------------------------------
+\entry
+{2010}
+{Presentation}
+{SAPO Labs, University of Porto}
+{Presented Ciclope project for the Portugal Telecom's CEO and the media, as part of the inaugural presentation of
+Laboratório SAPO/U.Porto.}
+%------------------------------------------------
+\entry
+{2010}
+{Poster}
+{KDD Workshop on Social Media Analytics}
+{Presented the blog popularity study conducted during my Masters degree.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} search engines, data analysis, web development, blockchain, DeFi, algorithms and data structures, data visualization \textbf{personal:} investment, crypto, games, music, tv, movies
+
+\textbf{more information:} \url{http://josedevezas.com/}
+
+%----------------------------------------------------------------------------------------
+%	COLLABORATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{collaborations}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2020}
+{Member of the program committee}
+{}
+{\emph{Graphs and More Complex Structures for Learning and Reasoning,\newline Workshop At AAAI 2021}\\
+{\small\url{https://sites.google.com/view/gclr2021/}}}
+%------------------------------------------------
+\entry
+{2019--2020}
+{Member of the program committee}
+{}
+{\emph{European Conference on Information Retrieval 2020 and 2021}\\
+{\small\url{https://www.ecir2020.org/}, \url{https://www.ecir2021.eu/}}}
+%------------------------------------------------
+\entry
+{2017--2019}
+{Member of the program committee}
+{}
+{\emph{Complex Networks 2017, 2018 and 2019}\\
+{\small\url{http://complexnetworks.org}}}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2019/2020}
+{Master's thesis co-supervision}
+{}
+{\emph{Building a domain-specific search engine that explores football-related search patterns}\\
+{\small\url{https://hdl.handle.net/10216/128526}}}
+%------------------------------------------------
+\entry
+{2017/2018}
+{Participation in TREC 2018 with the University of Alicante}
+{}
+{\emph{FEUP at TREC 2018 Common Core Track -- Reranking for Diversity using Hypergraph-of-Entity and Document Profiling}\\
+{\small\url{https://trec.nist.gov/pubs/trec27/papers/FEUP-CC.pdf}}}
+%------------------------------------------------
+\entry
+{2016/2017}
+{Master's thesis co-supervision}
+{}
+{\emph{Named entity extraction from Portuguese web text}\\
+{\small\url{http://hdl.handle.net/10216/106094}}}
+%------------------------------------------------
+\entry
+{2015/2016}
+{Master's thesis co-supervision}
+{}
+{\emph{Exploring the Sea: Heterogeneous Geo-Referenced Data Repository}\\
+{\small\url{http://hdl.handle.net/10216/85612}}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\printbibsection{article}{journal articles}
+\printbibsection{inproceedings}{conference articles}
+\printbibsection{report}{technical reports}
+\printbibsection{inbook}{book chapters}
+\clearpage
+\printbibsection{thesis}{theses}
+\printbibsection{misc}{datasets}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS SECTION (optional)
+%----------------------------------------------------------------------------------------
+
+\ifselectedprojects
+
+\clearpage
+
+\section{selected projects}
+
+Here I present some of the most representative projects of my research career, where I developed multiple competences in the broad areas of information retrieval, network science and machine learning. This serves the purpose of illustrating not only the challenges I tackled, but also the feasibility, from start to finish, of all the projects I participated in, where a working prototype was always delivered, as a live demonstration of the carried research.\\
+
+\begin{entrylist}
+\entry
+{2015--2020}
+{ANT}
+{Laboratório de Sistemas de Informação/U.Porto}
+{ANT is an entity-oriented search engine available at \url{http://ant.fe.up.pt}, that indexes data from the SIGARRA Information System. On one side, it aims at improving search in U.Porto. On the other side, it aims at providing a platform to educate students and to support future research in the area.\\
+
+This research project motivated my doctoral proposal, providing the ideal platform for the integration of previous areas of interest, particularly information retrieval and network science, but also recommendation and personalization. Working in ANT led me to identify several challenges in the area of entity-oriented search and to devise an innovative and focused contribution.\\
+
+In a similar fashion to Google and other modern search engines, this enabled our system to answer user questions more directly, well beyond the traditional keyword-based matching. Our proposed integrated solution for segmentation and annotation of queries is illustrated in the following figure of the development front-end.\\
+
+\includegraphics[width=.85\columnwidth]{ant.png}\\}
+
+\entry
+{2012--2013}
+{Juggle}
+{Laboratório SAPO/U.Porto}
+{Juggle project aimed at improving music discovery based on a hybrid large-scale recommender system, capable of handling and combining different types of data, namely text and audio content, context from elements such as tags or location, and collaborative information from user profiles.}
+\end{entrylist}
+\begin{entrylist}
+\entry{}{}{}{
+We tackled the challenges of multimodality and large-scale by developing a graph-based recommender system, supported on Neo4j, a popular and robust graph database that facilitated the modeling of content, context and collaborative information as nodes and edges in a graph. One of the biggest challenges was the translation of audio content to relationships in a graph, specifically the comparison of the audio features of a million songs with each other, which we solved by using an approximate search algorithm from image retrieval.\\
+
+Our recommendation algorithm was mainly supported on neighborhood methods for collaborative filtering, but we also used metrics from text retrieval to boost the relevance of tags in the long tail, while not completely disregarding tag popularity, in order to offer a playlist that better potentiated the discovery of music.\\
+
+\includegraphics[width=\linewidth]{juggle.png}\\
+
+In Juggle Mobile we presented the users with the ability to create an account and fill their taste profiles either based on our random artist rating system, or by importing their existing music information from Facebook or Last.fm. All the data from these different sources was mixed together based on our weighting model and used to provide recommendations to the user or to a group of nearby users.}
+\end{entrylist}
+
+\begin{entrylist}
+\entry{}{}{}{
+Our experiments were based on a linear algebra approach, where, instead of a graph, we used a user-items matrix, applying singular value decomposition to build a latent factor model that provided the support for individual and group recommendations. For groups, we proposed a rating aggregation method that ensured an equal chance for every group member to have a relevant influence in the recommendations outcome.\\
+
+\begin{minipage}{.3\columnwidth}
+  \includegraphics[width=\linewidth]{juggle_mobile-nearby_users.png}
+\end{minipage}
+\quad
+\begin{minipage}{.3\columnwidth}
+  \includegraphics[width=\linewidth]{juggle_mobile-group_recommendations.png}
+\end{minipage}
+\vspace{1.5em}}
+
+\entry
+{2011--2012}
+{Breadcrumbs}
+{CRACS/INESC TEC}
+{As a Breadcrumbs researcher, I was able to make contributions on several different areas. I implemented a language-independent named entity recognition system based on DBpedia entity lists. This system enabled the identification of three different types of entities — people, places and dates — tied to three of the five dimensions (the Five-Ws) of journalism: who, where and when. Using this data, a multidimensional entity coreference network was built, connecting news clips that cited the same entity. Next, I implemented the community detection methodologies for multidimensional networks proposed by Tang~et~al. This included the dimension integration strategies proposed by the authors, based on their unified view of four traditional community detection methodologies. These algorithms were also implemented in the system, along with the Louvain method, one of the state of the art algorithms for community detection.\\
+
+Next, two visualization tools were developed to display and explore the acquired data. The first was analogous to a map, where communities were visualized as countries resulting of the aggregation of a node population. The second enabled the exploration of the multidimensional network based on the three identified dimensions: who, where and when. Some simple chart visualizations were created to display statistics about the top user and system tags and entities.\\
+
+We used a topic model, based on Latent Dirichlet Allocation, to suggest titles for each collection of news clips; a simplistic event detection system was also created, in order to find relevant peaks of activity in a time series of entity frequencies. Some other trivial systems, such as an administration panel, capable of scheduling tasks, and a widget dashboard were also implemented.}
+\end{entrylist}
+\begin{entrylist}
+\entry{}{}{}{
+These algorithms were all developed using a web services architecture, communicating using either XML or JSON. Several scientific papers were published as the results of the described research. Below are some screenshots of the Breadcrumbs modules I contributed to in some way.\\
+
+\includegraphics[width=.85\linewidth]{breadcrumbs-dashboard.png}\\
+
+\includegraphics[width=.85\linewidth]{breadcrumbs-entity_graph.png}\\
+
+\includegraphics[width=.85\linewidth]{breadcrumbs-entity_graph_v2.png}}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{2010--2011}
+{Ciclope}
+{Laboratório SAPO/U.Porto}
+{One of my first projects was Ciclope, a real time data visualization project aimed at gathering information from SAPO Blogs clickstream and displaying it in a useful way, allowing the blog owner to have an understanding of how the traffic flow of his or her blog behaved.\\
+
+Among other widgets, we developed two main visualizations: a real time bar chart that displayed the number of visits per second along with a table showing traffic origin and destination; and a custom flow tree to visualize and quantify aggregated traffic sources for a given blog.\\
+
+\includegraphics[width=.85\columnwidth]{ciclope-realtime.png}\\}
+\end{entrylist}
+
+\begin{entrylist}
+\entry{}{}{}{
+\includegraphics[width=.85\columnwidth]{ciclope-flowtree.png}}
+\end{entrylist}
+
+\fi
+
+%----------------------------------------------------------------------------------------
+
+\ifsignature
+
+\vfill
+\begin{flushright}
+  {José Luís da Silva Devezas}\\
+  {\today}\\[2em]
+
+  \makebox[0pt][l]{\hspace*{1em}\raisebox{-1.75em}{
+    \includegraphics[scale=0.5]{signature.pdf}}}
+  \noindent\rule{8cm}{.3pt}\\[-.5em]
+  \emph{Signature}
+\end{flushright}
+\vspace{2em}
+
+\fi
+
+\end{document}

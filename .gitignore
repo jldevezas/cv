@@ -1,0 +1,29 @@
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.blg
+*.bbl
+*.bcf
+*-blx.bib
+*.run.xml
+*.bak
+*.bib.sav
+*.nav
+*.snm
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.lol
+*.cut
+*.synctex*
+*.vtc
+*.xdv
+
+# Visual Studio Code
+.vscode/
