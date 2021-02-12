@@ -36,7 +36,7 @@
 
 \begin{document}
 
-\header{josé}{devezas}{information retrieval and data science}
+\header{josé}{devezas}{information retrieval \& network science}
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -58,7 +58,7 @@ Portuguese (native)
 English (fluent)
 %
 \section{programming}
-{\color{red} $\varheartsuit$} Python, R, SQL, Java, C\#, Scala, Rust, Gremlin, HTML, CSS, JavaScript
+{\color{red} $\varheartsuit$} Python, R, SQL, Java, Scala, Gremlin
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -70,7 +70,7 @@ English (fluent)
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2016--Now}
+{2016--2021}
 {Doctoral Program {\normalfont in Computer Science (MAP-i)}}
 {U.Porto, UA, UMinho}
 {Classification (1st year): 19 (out of 20)\\[.5ex]
@@ -116,7 +116,7 @@ Thesis Classification: 18 (out of 20)}
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2016--2020}
+{2016--2021}
 {CSIG, INESC TEC}
 {Porto, Portugal}
 {\emph{Researcher / PhD Student}\\
@@ -125,7 +125,7 @@ MAP-i PhD student and FCT grant holder, working on entity-oriented search. Forme
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2015--2020}
+{2015--2021}
 {INFORMATION SYSTEMS LABORATORY, UNIVERSITY OF PORTO}
 {Porto, Portugal}
 {\emph{Researcher / PhD Student}\\
@@ -356,7 +356,7 @@ Laboratório SAPO/U.Porto.}
 
 \textbf{professional:} search engines, data analysis, web development, blockchain, DeFi, algorithms and data structures, data visualization \textbf{personal:} investment, crypto, games, music, tv, movies
 
-\textbf{more information:} \url{http://josedevezas.com/}
+\textbf{more information:} \url{http://www.josedevezas.com/}
 
 %----------------------------------------------------------------------------------------
 %	COLLABORATIONS SECTION
@@ -447,7 +447,20 @@ Here I present some of the most representative projects of my research career, w
 
 \begin{entrylist}
 \entry
-{2015--2020}
+{2017--2021}
+{Army ANT}
+{Laboratório de Sistemas de Informação/U.Porto}
+{Army ANT is an information retrieval research framework that supports experimentation with classical approaches, while also providing a high-level abstraction that motivates the implementation of innovative approaches in a shared evaluation environment. It facilitates the use of combined data, and it provides an environment for testing and evaluating multiple retrieval tasks, supporting keyword or entity queries, as well as documents, entities, or even terms, as the rankable results.\\
+
+This software contains the majority of the code I developed throughout my PhD, providing iterators for well-known test collection, as well as evaluators for several common retrieval tasks from the TREC and INEX evaluation forums. Several experimental search models are also available in Army ANT, along with classical approaches based on Apache Lucene.\\
+
+The code is available at \url{https://github.com/feup-infolab/army-ant}, and several Docker images are also available at \url{https://hub.docker.com/r/jldevezas/army-ant}, which can be installed using Docker Compose based on the code at \url{https://github.com/feup-infolab/army-ant-install}.\\
+
+\includegraphics[width=.85\columnwidth]{army_ant.png}\\}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{2015--2021}
 {ANT}
 {Laboratório de Sistemas de Informação/U.Porto}
 {ANT is an entity-oriented search engine available at \url{http://ant.fe.up.pt}, that indexes data from the SIGARRA Information System. On one side, it aims at improving search in U.Porto. On the other side, it aims at providing a platform to educate students and to support future research in the area.\\
@@ -462,23 +475,24 @@ In a similar fashion to Google and other modern search engines, this enabled our
 {2012--2013}
 {Juggle}
 {Laboratório SAPO/U.Porto}
-{Juggle project aimed at improving music discovery based on a hybrid large-scale recommender system, capable of handling and combining different types of data, namely text and audio content, context from elements such as tags or location, and collaborative information from user profiles.}
+{Juggle project aimed at improving music discovery based on a hybrid large-scale recommender system, capable of handling and combining different types of data, namely text and audio content, context from elements such as tags or location, and collaborative information from user profiles.\\
+
+We tackled the challenges of multimodality and large-scale by developing a graph-based recommender system, supported on Neo4j, a popular and robust graph database that facilitated the modeling of content, context and collaborative information as nodes and edges in a graph. One of the biggest challenges was the translation of audio content to relationships in a graph, specifically the comparison of the audio features of a million songs with each other, which we solved by using an approximate search algorithm from image retrieval.}
 \end{entrylist}
+
 \begin{entrylist}
 \entry{}{}{}{
-We tackled the challenges of multimodality and large-scale by developing a graph-based recommender system, supported on Neo4j, a popular and robust graph database that facilitated the modeling of content, context and collaborative information as nodes and edges in a graph. One of the biggest challenges was the translation of audio content to relationships in a graph, specifically the comparison of the audio features of a million songs with each other, which we solved by using an approximate search algorithm from image retrieval.\\
-
 Our recommendation algorithm was mainly supported on neighborhood methods for collaborative filtering, but we also used metrics from text retrieval to boost the relevance of tags in the long tail, while not completely disregarding tag popularity, in order to offer a playlist that better potentiated the discovery of music.\\
 
 \includegraphics[width=\linewidth]{juggle.png}\\
 
-In Juggle Mobile we presented the users with the ability to create an account and fill their taste profiles either based on our random artist rating system, or by importing their existing music information from Facebook or Last.fm. All the data from these different sources was mixed together based on our weighting model and used to provide recommendations to the user or to a group of nearby users.}
+In Juggle Mobile we presented the users with the ability to create an account and fill their taste profiles either based on our random artist rating system, or by importing their existing music information from Facebook or Last.fm. All the data from these different sources was mixed together based on our weighting model and used to provide recommendations to the user or to a group of nearby users.\\
+
+Our experiments were based on a linear algebra approach, where, instead of a graph, we used a user-items matrix, applying singular value decomposition to build a latent factor model that provided the support for individual and group recommendations. For groups, we proposed a rating aggregation method that ensured an equal chance for every group member to have a relevant influence in the recommendations outcome.}
 \end{entrylist}
 
 \begin{entrylist}
 \entry{}{}{}{
-Our experiments were based on a linear algebra approach, where, instead of a graph, we used a user-items matrix, applying singular value decomposition to build a latent factor model that provided the support for individual and group recommendations. For groups, we proposed a rating aggregation method that ensured an equal chance for every group member to have a relevant influence in the recommendations outcome.\\
-
 \begin{minipage}{.3\columnwidth}
   \includegraphics[width=\linewidth]{juggle_mobile-nearby_users.png}
 \end{minipage}
@@ -498,6 +512,7 @@ Next, two visualization tools were developed to display and explore the acquired
 
 We used a topic model, based on Latent Dirichlet Allocation, to suggest titles for each collection of news clips; a simplistic event detection system was also created, in order to find relevant peaks of activity in a time series of entity frequencies. Some other trivial systems, such as an administration panel, capable of scheduling tasks, and a widget dashboard were also implemented.}
 \end{entrylist}
+
 \begin{entrylist}
 \entry{}{}{}{
 These algorithms were all developed using a web services architecture, communicating using either XML or JSON. Several scientific papers were published as the results of the described research. Below are some screenshots of the Breadcrumbs modules I contributed to in some way.\\
@@ -508,6 +523,7 @@ These algorithms were all developed using a web services architecture, communica
 
 \includegraphics[width=.85\linewidth]{breadcrumbs-entity_graph_v2.png}}
 \end{entrylist}
+
 \begin{entrylist}
 \entry
 {2010--2011}
