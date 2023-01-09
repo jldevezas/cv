@@ -24,7 +24,7 @@
 \usepackage{graphicx}
 \graphicspath{{figures/} {screenshots/}}
 
-\hypersetup{hidelinks=true}
+\hypersetup{hidelinks,colorlinks,linkcolor=red,urlcolor=red,citecolor=red,anchorcolor=red}
 \urlstyle{rm}
 
 \addbibresource{resume.bib}
@@ -36,7 +36,7 @@
 
 \begin{document}
 
-\header{josé}{devezas}{information retrieval \& network science}
+\header{José Devezas}{, PhD}{data $\rightarrow$ information $\rightarrow$ knowledge $\rightarrow$ search \& analytics}
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -45,27 +45,26 @@
 \begin{aside} % In the aside, each new line forces a line break
 \includegraphics[width=\textwidth]{photo.jpg}
 %
-\section{contact}
+\section{Contact}
 Porto, Portugal
-%+351 939 828 043
 ~
 {\footnotesize \href{mailto:joseluisdevezas@gmail.com}{joseluisdevezas@gmail.com}
-\href{http://www.josedevezas.com}{http://www.josedevezas.com} %
-LinkedIn: \href{http://pt.linkedin.com/in/jldevezas/en}{jldevezas}}
+\href{https://josedevezas.com}{https://josedevezas.com}
+LinkedIn: \href{https://www.linkedin.com/in/jldevezas/?locale=en_US}{jldevezas}}
 %
-\section{languages}
+\section{Languages}
 Portuguese (native)
 English (fluent)
 %
-\section{programming}
-{\color{red} $\varheartsuit$} Python, R, SQL, Java, Scala, Gremlin
+\section{Programming}
+{\color{red} $\varheartsuit$} {\small Python, R, SQL, Scala, Java, Gremlin, Vue.js}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{education}
+\section{Education}
 
 \begin{entrylist}
 %------------------------------------------------
@@ -81,11 +80,11 @@ A graph-based joint representation of unstructured and structured data has the p
 During the course of this doctoral work, two main systems were developed: ANT, an entity-oriented search engine for the University of Porto (prototype); and Army ANT, a workbench for innovation in entity-oriented search.\\[-.75em]
 
 \url{https://ant.fe.up.pt/}\\
-\url{https://github.com/feup-infolab/ant}\\[-.75em]
+\url{https://github.com/feup-infolab/ant} (private)\\[-.75em]
 
 \url{https://github.com/feup-infolab/army-ant}\\
 \url{https://github.com/feup-infolab/army-ant-install}\\
-\url{https://hub.docker.com/repository/docker/jldevezas/army-ant}}
+\url{https://hub.docker.com/r/jldevezas/army-ant}}
 %------------------------------------------------
 %------------------------------------------------
 \entry
@@ -111,25 +110,67 @@ Thesis Classification: 18 (out of 20)}
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{experience}
+\section{Experience}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2021--2022}
-{Career Break}
-{Porto, Portugal}
-{\emph{Career Transition}\\
-
-}
-%------------------------------------------------
-\entry
 {2022--Now}
-{Hex Datum OÜ}
+{HEX DATUM OÜ}
 {Tallinn, Estonia}
 {\emph{Founder CEO}\\
-
-}
+Hex Datum OÜ was founded as a solopreneur and Estonian e-residency company. We sell software-as-a-service (SaaS), as well as consulting services in the area of intelligent information systems. Our flagship product is a crypto analytics web application called Indicator Dash (\href{https://indicatordash.app}{indicatordash.app}). Key responsibilities during the development of this service included:}
+\end{entrylist}
+\begin{entrylist}
+\entry{}{}{}{
+{\normalsize \emph{Data Engineering:}}
+\vspace{0.175em}
+{\footnotesize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Python-based ETL;
+  \item PostgreSQL and JanusGraph DBA, and relational and graph data modeling;
+  \item Redis caching layer to ensure real-time usability.
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Data Science:}}
+\vspace{0.175em}
+{\footnotesize \begin{itemize}
+  \item Design and implementation of technical, fundamental, and sentiment financial indicators;
+  \item Data analysis and visualization for small blog-based studies;
+  \item ML prototyping in Jupyter (time series forecasting using transformers and LSTMs).
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Search Engineering:}}
+\vspace{0.175em}
+{\footnotesize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Entity search for people, organizations and products;
+  \item Entity-oriented news search and ranking;
+  \item Sentiment-based news filtering.
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Full-Stack Development:}}
+\vspace{0.175em}
+{\footnotesize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Python-based stack built on top of Flask;
+  \item JavaScript-based stack built on top of Vue.js and Tachyons.
+\end{itemize}}
+\vspace{0.3em}
+{\normalsize \emph{Data Presentation:}}
+\vspace{0.175em}
+{\footnotesize \begin{itemize}
+  \setlength\itemsep{.0175em}
+  \item Financial charting (candlestick/OHLC);
+  \item Knowledge graph visualization and exploration UI.
+\end{itemize}}}
+%------------------------------------------------
+\entry
+{2021--2022}
+{CAREER BREAK}
+{Porto, Portugal}
+{\emph{Career Transition}\\
+After completing the PhD, I decided to invest in building my own business. I started developing a crypto analytics prototype web application, which eventually led to the opening of a company, Hex Datum OÜ, as an e-resident of Estonia.}
 %------------------------------------------------
 \entry
 {2016--2021}
@@ -137,8 +178,6 @@ Thesis Classification: 18 (out of 20)}
 {Porto, Portugal}
 {\emph{Researcher / PhD Student}\\
 MAP-i PhD student and FCT grant holder, working on entity-oriented search. Former FourEyes researcher with a focus on studying information consumption on social media. Provided support to the research group through data engineering, by developing the infrastructure for Twitter data collection and analysis, as well as news collection and archiving.}
-\end{entrylist}
-\begin{entrylist}
 %------------------------------------------------
 \entry
 {2015--2021}
@@ -153,6 +192,8 @@ MAP-i PhD student and FCT grant holder, working on entity-oriented search. Resea
 {Porto, Portugal}
 {\emph{Invited Assistant}\\
 Lectured one semester on social network analysis, for the Information Management in Social Networks course, at the Master in Information Science, and one semester on relational and document databases, for the Databases course, at the Master in Informatics and Computing Engineering.}
+\end{entrylist}
+\begin{entrylist}
 %------------------------------------------------
 \entry
 {2014--2015}
@@ -161,7 +202,7 @@ Lectured one semester on social network analysis, for the Information Management
 {\emph{Software Engineer / Data Scientist}\\[0.3em]
 {\normalsize \emph{Data Science:}}
 \vspace{0.175em}
-{\normalsize \begin{itemize}
+{\footnotesize \begin{itemize}
   \setlength\itemsep{.0175em}
   \item Collection and analysis of several types of data, mainly originating from the web, particularly from social media.
   \item Highly proficient in R, Python and SQL (from data collection to reporting), including topic tracking, outlier and anomaly detection, statistical smoothing, regression, classification, clustering and network analysis.
@@ -172,7 +213,7 @@ Lectured one semester on social network analysis, for the Information Management
 \vspace{0.3em}
 {\normalsize \emph{Software Engineering:}}
 \vspace{0.175em}
-{\normalsize \begin{itemize}
+{\footnotesize \begin{itemize}
   \setlength\itemsep{.0175em}
   \item Software design of web applications and analytics pipelines.
   \item Technology evaluation and selection.
@@ -186,7 +227,7 @@ Lectured one semester on social network analysis, for the Information Management
 \vspace{0.3em}
 {\normalsize \emph{Programming:}}
 \vspace{0.175em}
-{\normalsize \begin{itemize}
+{\footnotesize \begin{itemize}
   \setlength\itemsep{.0175em}
   \item Worked in nearly every company project, using various different languages.
   \item Developed several web applications and web services.
@@ -200,7 +241,7 @@ Lectured one semester on social network analysis, for the Information Management
 \vspace{0.3em}
 {\normalsize \emph{Sysadmin:}}
 \vspace{0.175em}
-{\normalsize \begin{itemize}
+{\footnotesize \begin{itemize}
   \setlength\itemsep{.0175em}
   \item Manage the company servers, including security, backups and product deploys.
   \item Maintain firewall rules and SMTP server.
@@ -212,8 +253,6 @@ Lectured one semester on social network analysis, for the Information Management
   \item Support Ticket System configuration.
   \item PayPal payment services.
 \end{itemize}}}
-\end{entrylist}
-\begin{entrylist}
 %------------------------------------------------
 \entry
 {2012--2013}
@@ -228,6 +267,8 @@ Research and development of music discovery and recommendation techniques suppor
 {Porto, Portugal}
 {\emph{Researcher / Developer}\\
 Enhancement, adaptation and implementation of state of the art algorithms for network analysis, data mining and data visualization, in the context of intelligent information systems for cyber journalism, as part of the Breadcrumbs Project (UTA-Est/MAI/0007/2009).}
+\end{entrylist}
+\begin{entrylist}
 %------------------------------------------------
 \entry
 {2010-2011}
@@ -249,7 +290,7 @@ Translation of the official FreeBSD documentation to portuguese, creation of how
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{awards}
+\section{Awards}
 
 \begin{entrylist}
 %------------------------------------------------
@@ -264,7 +305,7 @@ Translation of the official FreeBSD documentation to portuguese, creation of how
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
-\section{communication skills}
+\section{Communication Skills}
 
 \begin{entrylist}
 %------------------------------------------------
@@ -297,8 +338,6 @@ Translation of the official FreeBSD documentation to portuguese, creation of how
 {Invited Speaker}
 {Creative CoLAB 2019}
 {Introduced several concepts about hypergraphs, arguing about their generality, and presented an approach to mapping terms and entities with hypergraphs, which could be used to universally solve multiple entity-oriented search tasks.}
-\end{entrylist}
-\begin{entrylist}
 %------------------------------------------------
 \entry
 {2018}
@@ -323,6 +362,8 @@ Translation of the official FreeBSD documentation to portuguese, creation of how
 {Presentation}
 {DEI, FEUP}
 {Did a short presentation on the Juggle project for the department, in the context of DEI Talks.}
+\end{entrylist}
+\begin{entrylist}
 %------------------------------------------------
 \entry
 {2013}
@@ -368,17 +409,17 @@ Laboratório SAPO/U.Porto.}
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{interests}
+\section{Interests}
 
-\textbf{professional:} search engines, data analysis, web development, blockchain, DeFi, algorithms and data structures, data visualization \textbf{personal:} investment, crypto, games, music, tv, movies
+\textbf{Professional:} search engines, data analysis, web development, blockchain, DeFi, algorithms and data structures, data visualization \textbf{Personal:} investment, crypto, games, music, tv, movies
 
-\textbf{more information:} \url{http://www.josedevezas.com/}
+\textbf{More information:} \url{https://josedevezas.com/}
 
 %----------------------------------------------------------------------------------------
 %	COLLABORATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{collaborations}
+\section{Collaborations}
 
 \begin{entrylist}
 %------------------------------------------------
@@ -439,15 +480,15 @@ Laboratório SAPO/U.Porto.}
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{publications}
+\section{Publications}
 
-\printbibsection{article}{journal articles}
-\printbibsection{inproceedings}{conference articles}
-\printbibsection{report}{technical reports}
-\printbibsection{inbook}{book chapters}
+\printbibsection{article}{Journal Articles}
+\printbibsection{inproceedings}{Conference Articles}
+\printbibsection{report}{Technical Reports}
+\printbibsection{inbook}{Book Chapters}
+\printbibsection{thesis}{Theses}
 \clearpage
-\printbibsection{thesis}{theses}
-\printbibsection{misc}{datasets}
+\printbibsection{misc}{Datasets}
 
 %----------------------------------------------------------------------------------------
 %	SELECTED PROJECTS SECTION (optional)
@@ -455,11 +496,9 @@ Laboratório SAPO/U.Porto.}
 
 \ifselectedprojects
 
-\clearpage
+\section{Selected Projects}
 
-\section{selected projects}
-
-Here I present some of the most representative projects of my research career, where I developed multiple competences in the broad areas of information retrieval, network science and machine learning. This serves the purpose of illustrating not only the challenges I tackled, but also the feasibility, from start to finish, of all the projects I participated in, where a working prototype was always delivered, as a live demonstration of the carried research.\\
+Here I present some of the most representative projects of my research career, where I developed multiple competences in the broad areas of information retrieval, network science, and machine learning. This serves the purpose of illustrating not only the challenges I tackled, but also the feasibility, from start to finish, of all the projects I participated in, where a working prototype was always delivered, as a live demonstration of the carried research.\\
 
 \begin{entrylist}
 \entry
@@ -472,7 +511,7 @@ This software contains the majority of the code I developed throughout my PhD, p
 
 The code is available at \url{https://github.com/feup-infolab/army-ant}, and several Docker images are also available at \url{https://hub.docker.com/r/jldevezas/army-ant}, which can be installed using Docker Compose based on the code at \url{https://github.com/feup-infolab/army-ant-install}.\\
 
-\includegraphics[width=.85\columnwidth]{army_ant.png}\\}
+{\centering\includegraphics[width=.7\columnwidth]{army_ant.png}\\}}
 \end{entrylist}
 \begin{entrylist}
 \entry
