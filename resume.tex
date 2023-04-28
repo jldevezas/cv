@@ -29,6 +29,10 @@
 
 \renewcommand{\baselinestretch}{1.2}
 
+\setlength{\fboxsep}{.5em}
+% \setlength{\fboxrule}{1pt}
+\newcommand{\skills}[1]{\fcolorbox{red}{white}{\parbox{\linewidth}{\small \textbf{Skills:} #1}}}
+
 \begin{document}
 
 \header{José Devezas}{, PhD}{data $\rightarrow$ information $\rightarrow$ knowledge $\rightarrow$ search \& analytics}
@@ -40,19 +44,22 @@
 \begin{aside} % In the aside, each new line forces a line break
 \includegraphics[width=\textwidth]{photo.jpg}
 %
-\section{Location}
-Porto, Portugal
-~
 {\footnotesize \href{mailto:joseluisdevezas@gmail.com}{joseluisdevezas@gmail.com}
 \href{https://josedevezas.com}{https://josedevezas.com}
 LinkedIn: \href{https://www.linkedin.com/in/jldevezas/?locale=en_US}{jldevezas}}
+%
+\section{Location}
+Porto, Portugal
 %
 \section{Languages}
 Portuguese (native)
 English (fluent)
 %
 \section{Main Skills}
-{\small Graph Analytics, Neo4j, Gremlin, SQL, Python, R, Scala, Java, Vue.js}
+{\small Graph Analytics\\Neo4j\\Gremlin\\SQL\\Python\\R\\Scala\\Java\\Vue.js}
+%
+\section{Areas}
+{\small Network Science\\Search Engineering\\Knowledge Engineering\\Data Science\\Data Engineering\\Software Engineering}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -79,7 +86,7 @@ Two main systems were developed:\\[-.5em]
 
 \vspace{1em}
 
-{\small \textbf{Skills:} Java, Lucene, Neo4j, Gremlin, R, Python, Flask, \mbox{PostgreSQL}, Vue.js}\\}
+\skills{Java, Lucene, Neo4j, Gremlin, R, Python, Flask, \mbox{PostgreSQL}, Vue.js}\\}
 %------------------------------------------------
 \entry
 {2003--2010}
@@ -88,7 +95,7 @@ Two main systems were developed:\\[-.5em]
 {Final grade: 14 {\footnotesize (out of 20)}, Thesis grade: 18 {\footnotesize (out of 20)}\\
 Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_thesis-2010-devezas-link_ecosystem_of_the_portuguese_blogosphere.pdf}{Link Ecosystem of the Portuguese Blogosphere}\\[-.5em]
 
-{\small \textbf{Skills:} R, igraph, Perl, BerkeleyDB, Lucene}\\}
+\skills{R, igraph, Perl, BerkeleyDB, Lucene}\\}
 %------------------------------------------------
 \entry
 {2000--2003}
@@ -107,60 +114,38 @@ Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_the
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2022--2023}
+{2021--2023}
 {HEX DATUM OÜ}
 {Tallinn, Estonia}
 {\emph{Founder CEO}\\[-.5em]
 
-Hex Datum OÜ was founded as a solopreneur and Estonian e-residency company. We sold software-as-a-service (SaaS), as well as consulting services in the area of intelligent information systems. Our flagship product was a crypto analytics web application called Indicator Dash (indicatordash.app).\\
+Hex Datum OÜ offered software-as-a-service (SaaS), as well as consulting services in the area of intelligent information systems. Our flagship product was a crypto analytics web application called Indicator Dash (indicatordash.app).\\
 
-{\small \textbf{Skills:} Data Engineering, Python, ETL, PostgreSQL, JanusGraph, \mbox{Redis}, Data Science, Financial Indicators, Data Visualization, Jupyter, Time Series Forecasting, Transformers, LSTMs, Search Engineering, Sentiment Analysis, Full-Stack \mbox{Development}, Flask, Vue.js, Tachyons}\\}
-%------------------------------------------------
-\entry
-{2021--2022}
-{CAREER BREAK}
-{Porto, Portugal}
-{\emph{Career Transition}\\[-.5em]
-
-Proof-of-concept and prototyping in preparation for startup creation.\\}
+\skills{Python, ETL, PostgreSQL, JanusGraph, \mbox{Redis}, Financial Indicators, Data Visualization, Jupyter, Time Series Forecasting, Transformers, LSTMs, Indexing and Search, Sentiment Analysis, Full-Stack \mbox{Development}, Flask, Vue.js, Tachyons}\\}
 \end{entrylist}
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2016--2021}
-{CSIG, INESC TEC}
-{Porto, Portugal}
-{\emph{Researcher / PhD Student}\\[-.5em]
-
-\begin{itemize}[leftmargin=*]
-  \item MAP-i PhD student and FCT grant holder, working on entity-oriented search.
-  \item FourEyes researcher with a focus on studying information consumption on social media.
-  \item Data engineer responsible for developing infrastructure for Twitter data collection and analysis, and news collection and archival.
-\end{itemize}
-
-\vspace{1em}
-
-{\small \textbf{Skills:} Scientific Writing, Experimental Design, Search Engineering, Data Engineering, Twitter API, Social Media Analytics, Python, Flask, Vue.js, Bulma}\\}
-%------------------------------------------------
-\entry
 {2015--2021}
-{INFOLAB, UNIVERSITY OF PORTO}
+{CSIG, INESC TEC \& INFOLAB, UNIVERSITY OF PORTO}
 {Porto, Portugal}
 {\emph{Researcher / PhD Student}\\[-.5em]
 
 \begin{itemize}[leftmargin=*]
   \item MAP-i PhD student and FCT grant holder, working on entity-oriented search.
+  \item FourEyes project researcher with a focus on studying information consumption on social media.
+  \item Data engineer responsible for developing infrastructure for Twitter data collection and analysis, and news collection and archival.
   \item Research and development of the \href{https://ant.fe.up.pt/}{ANT} entity-oriented search engine.
   \begin{itemize}
     \small
     \item Construction of specialized indexes and ontologies for efficient and effective question-answering through contextual widgets.
   \end{itemize}
-  \item Developed the open source project, \href{https://github.com/feup-infolab/army-ant}{Army ANT}, as a platform for research and experimentation of search engines backed by linked data.
+  \item Development of the open source project, \href{https://github.com/feup-infolab/army-ant}{Army ANT}, as a platform for research and experimentation of search engines backed by linked data.
 \end{itemize}
 
 \vspace{1em}
 
-{\small \textbf{Skills:} Scientific Writing, Experimental Design, Search Engineering, Web Crawling, Data Engineering, Data Science, Jupyter, PostgreSQL, MongoDB, Java, Lucene, Neo4j, Gremlin, R, igraph, Python, Scrapy, \mbox{NetworkX}, Pandas, SQLAlchemy, Flask, Vue.js, Spectre.css}\\}
+\skills{Scientific Writing, Experimental Design, Indexing and Search, Web Crawling, Twitter API, Social Media Analytics, Jupyter, PostgreSQL, MongoDB, Java, Lucene, Neo4j, Gremlin, R, igraph, Python, Scrapy, NetworkX, Pandas, SQLAlchemy, Flask, Vue.js, Spectre.css, Bulma}\\[.5em]}
 %------------------------------------------------
 \entry
 {2017--2018}
@@ -177,9 +162,7 @@ Lectured two semesters on:\\[-.5em]
 
 \vspace{1em}
 
-{\small \textbf{Skills:} Educational Content Creation, Slide Presentation, Student Assessment, Gephi, KNIME, SQLite, MongoDB}\\}
-\end{entrylist}
-\begin{entrylist}
+\skills{Educational Content Creation, Slide Presentation, Student Assessment, Gephi, KNIME, SQLite, MongoDB}\\[.5em]}
 %------------------------------------------------
 \entry
 {2014--2015}
@@ -191,7 +174,7 @@ INTERRELATE was a data analytics and social media monitoring and management comp
 \end{entrylist}
 \begin{entrylist}
 \entry{}{}{}{
-{\small \textbf{Skills:} Social Media Analytics, Twitter API, Facebook API, Web Crawling, PostgreSQL, R, Python, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Software Engineering, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, SMTP, DNS, Nginx, Log Monitoring, Support Tickets, Payment Services}\\}
+\skills{Social Media Analytics, Twitter API, Facebook API, Web Crawling, PostgreSQL, R, Python, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, SMTP, DNS, Nginx, Log Monitoring, Support Tickets, PayPal Payment Services}\\[.5em]}
 %------------------------------------------------
 \entry
 {2012--2013}
@@ -201,7 +184,7 @@ INTERRELATE was a data analytics and social media monitoring and management comp
 
 Research and development of music discovery and recommendation techniques supported on a graph-based neighborhood approach, as well as on latent factor models based on matrix factorization algorithms. Development of methodologies to combine knowledge from different dimensions, including not only user profile, content and context features, but also social features, such as community structure. Related tasks required work on data mining, multimodal network analysis and community detection, and information retrieval.\\
 
-{\small \textbf{Skills}: Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics, Neo4j, Gremlin, HDF5, Python, SciPy, PyMF}\\}
+\skills{Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics, Neo4j, Gremlin, HDF5, Python, SciPy, PyMF}\\[.5em]}
 %------------------------------------------------
 \entry
 {2011--2012}
