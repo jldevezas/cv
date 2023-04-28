@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{friggeri-cv}
+
+% \usepackage[none]{hyphenat}
+\usepackage{enumitem}
+
+\hypersetup{hidelinks,colorlinks=true,linkcolor=red,urlcolor=red,citecolor=red,anchorcolor=red}
+\urlstyle{rm}
+
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+
+\header{José Devezas}{, PhD}{data $\rightarrow$ information $\rightarrow$ knowledge $\rightarrow$ search \& analytics}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\includegraphics[width=\textwidth]{photo.jpg}
+%
+\section{Location}
+Porto, Portugal
+~
+{\footnotesize \href{mailto:joseluisdevezas@gmail.com}{joseluisdevezas@gmail.com}
+\href{https://josedevezas.com}{https://josedevezas.com}
+LinkedIn: \href{https://www.linkedin.com/in/jldevezas/?locale=en_US}{jldevezas}}
+%
+\section{Languages}
+Portuguese (native)
+English (fluent)
+%
+\section{Main Skills}
+{\small Graph Analytics, Neo4j, Gremlin, SQL, Python, R, Scala, Java, Vue.js}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2016--2021}
+{Doctoral Program {\normalfont in Computer Science (MAP-i)}}
+{U.Porto, UA, UMinho}
+{Curricular grade: 19 {\footnotesize (out of 20)}\\
+Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/phd_thesis-2021-devezas-graph_based_entity_oriented_search.pdf}{Graph-Based Entity-Oriented Search}\\[-.5em]
+
+Two main systems were developed:\\[-.5em]
+
+\begin{itemize}[leftmargin=*]
+  \item \href{https://ant.fe.up.pt/}{ANT}, an entity-oriented search engine for the University of Porto.
+  \item \href{https://youtube.com/playlist?list=PLc6NtbG0dqo1wGoYdTZkVd7I4SFNodKot}{Army ANT}, a workbench for innovation in entity-oriented search.
+\end{itemize}
+
+\vspace{1em}
+
+{\small \textbf{Skills:} Java, Lucene, Neo4j, Gremlin, R, Python, Flask, \mbox{PostgreSQL}, Vue.js}\\}
+%------------------------------------------------
+\entry
+{2003--2010}
+{Master {\normalfont in Informatics and Computing Engineering}}
+{U.Porto}
+{Final grade: 14 {\footnotesize (out of 20)}, Thesis grade: 18 {\footnotesize (out of 20)}\\
+Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_thesis-2010-devezas-link_ecosystem_of_the_portuguese_blogosphere.pdf}{Link Ecosystem of the Portuguese Blogosphere}\\[-.5em]
+
+{\small \textbf{Skills:} R, igraph, Perl, BerkeleyDB, Lucene}\\}
+%------------------------------------------------
+\entry
+{2000--2003}
+{Technological Specialization {\normalfont in Informatics}}
+{Colégio de Gaia}
+{Classification: 18 {\footnotesize (out of 20)}}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2022--2023}
+{HEX DATUM OÜ}
+{Tallinn, Estonia}
+{\emph{Founder CEO}\\[-.5em]
+
+Hex Datum OÜ was founded as a solopreneur and Estonian e-residency company. We sold software-as-a-service (SaaS), as well as consulting services in the area of intelligent information systems. Our flagship product was a crypto analytics web application called Indicator Dash (indicatordash.app).\\
+
+{\small \textbf{Skills:} Data Engineering, Python, ETL, PostgreSQL, JanusGraph, \mbox{Redis}, Data Science, Financial Indicators, Data Visualization, Jupyter, Time Series Forecasting, Transformers, LSTMs, Search Engineering, Sentiment Analysis, Full-Stack \mbox{Development}, Flask, Vue.js, Tachyons}\\}
+%------------------------------------------------
+\entry
+{2021--2022}
+{CAREER BREAK}
+{Porto, Portugal}
+{\emph{Career Transition}\\[-.5em]
+
+Proof-of-concept and prototyping in preparation for startup creation.\\}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2016--2021}
+{CSIG, INESC TEC}
+{Porto, Portugal}
+{\emph{Researcher / PhD Student}\\[-.5em]
+
+\begin{itemize}[leftmargin=*]
+  \item MAP-i PhD student and FCT grant holder, working on entity-oriented search.
+  \item FourEyes researcher with a focus on studying information consumption on social media.
+  \item Data engineer responsible for developing infrastructure for Twitter data collection and analysis, and news collection and archival.
+\end{itemize}
+
+\vspace{1em}
+
+{\small \textbf{Skills:} Scientific Writing, Experimental Design, Search Engineering, Data Engineering, Twitter API, Social Media Analytics, Python, Flask, Vue.js, Bulma}\\}
+%------------------------------------------------
+\entry
+{2015--2021}
+{INFOLAB, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Researcher / PhD Student}\\[-.5em]
+
+\begin{itemize}[leftmargin=*]
+  \item MAP-i PhD student and FCT grant holder, working on entity-oriented search.
+  \item Research and development of the \href{https://ant.fe.up.pt/}{ANT} entity-oriented search engine.
+  \begin{itemize}
+    \small
+    \item Construction of specialized indexes and ontologies for efficient and effective question-answering through contextual widgets.
+  \end{itemize}
+  \item Developed the open source project, \href{https://github.com/feup-infolab/army-ant}{Army ANT}, as a platform for research and experimentation of search engines backed by linked data.
+\end{itemize}
+
+\vspace{1em}
+
+{\small \textbf{Skills:} Scientific Writing, Experimental Design, Search Engineering, Web Crawling, Data Engineering, Data Science, Jupyter, PostgreSQL, MongoDB, Java, Lucene, Neo4j, Gremlin, R, igraph, Python, Scrapy, \mbox{NetworkX}, Pandas, SQLAlchemy, Flask, Vue.js, Spectre.css}\\}
+%------------------------------------------------
+\entry
+{2017--2018}
+{FACULTY OF ENGINEERING, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Invited Assistant}\\[-.5em]
+
+Lectured two semesters on:\\[-.5em]
+
+\begin{itemize}[leftmargin=*]
+  \item \href{http://josedevezas.com/academy/slides/\#girs-20172018}{Social network analysis}, for the Information Management in Social Networks course, of the Master in Information Science.
+  \item Relational and document databases, for the Databases course, of the Master in Informatics and Computing Engineering.
+\end{itemize}
+
+\vspace{1em}
+
+{\small \textbf{Skills:} Educational Content Creation, Slide Presentation, Student Assessment, Gephi, KNIME, SQLite, MongoDB}\\}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014--2015}
+{INTERRELATE}
+{Porto, Portugal}
+{\emph{Software Engineer / Data Scientist}\\[-.5em]
+
+INTERRELATE was a data analytics and social media monitoring and management company. It provided services based on data retrieval, entity detection, sentiment analysis, data visualization, text mining and natural language processing, event and topic detection, and influencer detection.\\}
+\end{entrylist}
+\begin{entrylist}
+\entry{}{}{}{
+{\small \textbf{Skills:} Social Media Analytics, Twitter API, Facebook API, Web Crawling, PostgreSQL, R, Python, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Software Engineering, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, SMTP, DNS, Nginx, Log Monitoring, Support Tickets, Payment Services}\\}
+%------------------------------------------------
+\entry
+{2012--2013}
+{SAPO LABS, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Researcher / Developer}\\[-.5em]
+
+Research and development of music discovery and recommendation techniques supported on a graph-based neighborhood approach, as well as on latent factor models based on matrix factorization algorithms. Development of methodologies to combine knowledge from different dimensions, including not only user profile, content and context features, but also social features, such as community structure. Related tasks required work on data mining, multimodal network analysis and community detection, and information retrieval.\\
+
+{\small \textbf{Skills}: Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics, Neo4j, Gremlin, HDF5, Python, SciPy, PyMF}\\}
+%------------------------------------------------
+\entry
+{2011--2012}
+{CRACS, INESC TEC}
+{Porto, Portugal}
+{\emph{Researcher / Developer}\\[-.5em]
+
+Enhancement, adaptation and implementation of state of the art algorithms for network analysis, data mining and data visualization, in the context of intelligent information systems for cyber journalism, as part of the Breadcrumbs Project (UTA-Est/MAI/0007/2009).\\}
+%------------------------------------------------
+\entry
+{2010-2011}
+{SAPO LABS, UNIVERSITY OF PORTO}
+{Porto, Portugal}
+{\emph{Researcher / Developer}\\[-.5em]
+
+Work in the areas of data mining, network analysis, community detection, information retrieval, real-time data analytics and data visualization.\\}
+%------------------------------------------------
+\entry
+{2002-2003}
+{NPF PORTUGUESE FREEBSD GROUP - npf.pt.freebsd.org}
+{Coimbra, Portugal}
+{\emph{Documentation / Programming}\\[-.5em]
+
+Translation of the official FreeBSD documentation to portuguese, creation of how-to guides in portuguese, porting open source applications to FreeBSD and programming and content management of a hints widget.}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	MORE INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{More Information}
+
+\textbf{Publications:} \url{http://josedevezas.com/academy/publications/}\\
+\textbf{Projects:} \url{http://josedevezas.com/academy/projects/}\\
+\textbf{Slides:} \url{http://josedevezas.com/academy/slides/}
+\end{document}

@@ -40,7 +40,7 @@
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
 \fi
-\colorlet{textcolor}{gray}
+% \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
 
 %%%%%%%%%
