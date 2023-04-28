@@ -1,4 +1,4 @@
-TEX_FILE=resume.tex
+TEX_FILE=cv.tex
 PDF_FILE=$(basename $(TEX_FILE)).pdf
 
 all: build
@@ -14,6 +14,7 @@ dev: view
 
 clean:
 	latexmk -c
+	rm -f *.xdv
 
-dist-clean:
+dist-clean: clean
 	latexmk -C
