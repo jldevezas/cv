@@ -75,7 +75,7 @@
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
+      \fontsize{39pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
