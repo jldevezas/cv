@@ -23,6 +23,7 @@
 
 % \usepackage[none]{hyphenat}
 \usepackage{enumitem}
+\usepackage{tcolorbox}
 
 %%
 % Settings
@@ -32,14 +33,19 @@
 \urlstyle{rm}
 
 \renewcommand{\baselinestretch}{1.2}
+% \renewcommand{\arraystretch}{1.2}
+% \setlength\tabcolsep{.25em}
+
 \setlength{\fboxsep}{.5em}
-% \setlength{\fboxrule}{1pt}
+\tcbset{colframe=red, colback=white, boxrule=.5pt, arc=.75em, sharp corners=downhill,
+  left=1em, right=1em, top=.5em, bottom=.5em, enlarge top by=-.9em, enlarge bottom by=.1em}
 
 %%
 % Commands
 %%
 
-\newcommand{\infobox}[1]{\fcolorbox{red}{white}{\parbox{\linewidth}{\small #1}}}
+% \newcommand{\infobox}[1]{\fcolorbox{red}{white}{\parbox{\linewidth}{\small #1}}}
+\newcommand{\infobox}[1]{\tcbox{\parbox{.91\linewidth}{\small #1}}}
 \newcommand{\languages}[1]{\textbf{Languages:} #1}
 \newcommand{\frameworks}[1]{\textbf{Frameworks:} #1}
 \newcommand{\libraries}[1]{\textbf{Libraries:} #1}
@@ -109,7 +115,15 @@ Two main systems were developed:\\[-1em]
 
 \vspace{1em}
 
-\infobox{\languages{Python, R, Java, Gremlin}\sep \frameworks{Flask, Vue.js}\sep \storage{Lucene, Neo4j, PostgreSQL}}\\}
+\begin{tabular}{r@{\extracolsep{.75em}}l}
+  \textbf{Publications:} & \url{http://josedevezas.com/academy/publications/}\\
+  \textbf{Projects:} & \url{http://josedevezas.com/academy/projects/}\\
+  \textbf{Slides:} & \url{http://josedevezas.com/academy/slides/}\\
+\end{tabular}
+
+\vspace{1em}
+
+\infobox{\languages{Python, R, Java, Gremlin}\sep \frameworks{Flask, Vue.js}\sep \storage{Lucene, Neo4j, PostgreSQL}}}
 %------------------------------------------------
 \entry
 {2003--2010}
@@ -118,7 +132,7 @@ Two main systems were developed:\\[-1em]
 {Final grade: 14 {\footnotesize (out of 20)}, Thesis grade: 18 {\footnotesize (out of 20)}\\
 Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_thesis-2010-devezas-link_ecosystem_of_the_portuguese_blogosphere.pdf}{Link Ecosystem of the Portuguese Blogosphere}\\[-.5em]
 
-\infobox{\languages{Perl, R}\sep \libraries{igraph}\sep \storage{BerkeleyDB, Lucene}}\\}
+\infobox{\languages{Perl, R}\sep \libraries{igraph}\sep \storage{BerkeleyDB, Lucene}}}
 %------------------------------------------------
 \entry
 {2000--2003}
@@ -127,6 +141,7 @@ Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_the
 {Classification: 18 {\footnotesize (out of 20)}}
 %------------------------------------------------
 \end{entrylist}
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -144,7 +159,7 @@ Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_the
 
 Hex Datum OÜ offered software-as-a-service (SaaS), as well as consulting services in the area of intelligent information systems. Our flagship product was a crypto analytics web application called Indicator Dash (indicatordash.app).\\
 
-\infobox{\languages{Python}\sep \frameworks{Flask, Vue.js, Tachyons}\sep \storage{PostgreSQL, JanusGraph, Redis}\sep \software{Jupyter}\sep \skills{ETL, Financial Indicators, Data Visualization, Time Series Forecasting, Transformers, LSTMs, Indexing and Search, Sentiment Analysis}}\\}
+\infobox{\languages{Python}\sep \frameworks{Flask, Vue.js, Tachyons}\sep \storage{PostgreSQL, JanusGraph, Redis}\sep \software{Jupyter}\sep \skills{ETL, Financial Indicators, Data Visualization, Time Series Forecasting, Transformers, LSTMs, Indexing and Search, Sentiment Analysis}}}
 \end{entrylist}
 \begin{entrylist}
 %------------------------------------------------
@@ -168,7 +183,7 @@ Hex Datum OÜ offered software-as-a-service (SaaS), as well as consulting servic
 
 \vspace{1em}
 
-\infobox{\languages{Java, Gremlin, R, Python}\sep \frameworks{Scrapy, SQLAlchemy, Flask, Vue.js, Spectre.css, Bulma}\sep \libraries{igraph, NetworkX, Pandas}\sep \apis{Twitter API}\sep \storage{PostgreSQL, MongoDB, Lucene, Neo4j}\sep \software{Jupyter}\sep \skills{Scientific Writing, Experimental Design, Indexing and Search, Web Crawling and Scraping, Social Media Analytics}}\\[.5em]}
+\infobox{\languages{Java, Gremlin, R, Python}\sep \frameworks{Scrapy, SQLAlchemy, Flask, Vue.js, Spectre.css, Bulma}\sep \libraries{igraph, NetworkX, Pandas}\sep \apis{Twitter}\sep \storage{PostgreSQL, MongoDB, Lucene, Neo4j}\sep \software{Jupyter}\sep \skills{Scientific Writing, Experimental Design, Indexing and Search, Web Crawling and Scraping, Social Media Analytics}}}
 %------------------------------------------------
 \entry
 {2017--2018}
@@ -185,7 +200,7 @@ Lectured two semesters on:\\[-.5em]
 
 \vspace{1em}
 
-\infobox{\storage{SQLite, MongoDB}\sep \software{Gephi, KNIME}\sep \skills{Educational Content Creation, Slide Presentation, Student Assessment}}\\[.5em]}
+\infobox{\storage{SQLite, MongoDB}\sep \software{Gephi, KNIME}\sep \skills{Educational Content Creation, Slide Presentation, Student Assessment}}}
 %------------------------------------------------
 \entry
 {2014--2015}
@@ -197,7 +212,7 @@ INTERRELATE was a data analytics and social media monitoring and management comp
 \end{entrylist}
 \begin{entrylist}
 \entry{}{}{}{
-\infobox{\languages{Python, R}\sep \apis{Twitter API, Facebook API, PayPal Payment Services}\sep \services{SMTP, DNS, Nginx, Support Tickets}\sep \storage{PostgreSQL}\sep \skills{Social Media Analytics, Web Crawling and Scraping, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, Log Monitoring}}\\[.5em]}
+\infobox{\languages{Python, R}\sep \apis{Twitter, Facebook, PayPal}\sep \services{SMTP, DNS, Nginx, Support Tickets}\sep \storage{PostgreSQL}\sep \skills{Social Media Analytics, Web Crawling and Scraping, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, Log Monitoring}}}
 %------------------------------------------------
 \entry
 {2012--2013}
@@ -207,7 +222,7 @@ INTERRELATE was a data analytics and social media monitoring and management comp
 
 Research and development of music discovery and recommendation techniques supported on a graph-based neighborhood approach, as well as on latent factor models based on matrix factorization algorithms. Development of methodologies to combine knowledge from different dimensions, including not only user profile, content and context features, but also social features, such as community structure. Related tasks required work on data mining, multimodal network analysis and community detection, and information retrieval.\\
 
-\infobox{\languages{Python, Gremlin}\sep \libraries{SciPy, PyMF}\sep \storage{Neo4j, HDF5}\sep \skills{Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics}}\\[.5em]}
+\infobox{\languages{Python, Gremlin}\sep \libraries{SciPy, PyMF}\sep \storage{Neo4j, HDF5, Redis}\sep \skills{Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics}}}
 %------------------------------------------------
 \entry
 {2011--2012}
@@ -225,23 +240,14 @@ Enhancement, adaptation and implementation of state of the art algorithms for ne
 
 Work in the areas of data mining, network analysis, community detection, information retrieval, real-time data analytics and data visualization.\\}
 %------------------------------------------------
-\entry
-{2002-2003}
-{NPF PORTUGUESE FREEBSD GROUP - npf.pt.freebsd.org}
-{Coimbra, Portugal}
-{\emph{Documentation / Programming}\\[-.5em]
+% \entry
+% {2002-2003}
+% {NPF PORTUGUESE FREEBSD GROUP - npf.pt.freebsd.org}
+% {Coimbra, Portugal}
+% {\emph{Documentation / Programming}\\[-.5em]
 
-Translation of the official FreeBSD documentation to portuguese, creation of how-to guides in portuguese, porting open source applications to FreeBSD and programming and content management of a hints widget.}
+% Translation of the official FreeBSD documentation to portuguese, creation of how-to guides in portuguese, porting open source applications to FreeBSD and programming and content management of a hints widget.}
 %------------------------------------------------
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	MORE INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{More Information}
-
-\textbf{Publications:} \url{http://josedevezas.com/academy/publications/}\\
-\textbf{Projects:} \url{http://josedevezas.com/academy/projects/}\\
-\textbf{Slides:} \url{http://josedevezas.com/academy/slides/}
 \end{document}
