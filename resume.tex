@@ -24,14 +24,37 @@
 % \usepackage[none]{hyphenat}
 \usepackage{enumitem}
 
+%%
+% Settings
+%%
+
 \hypersetup{hidelinks,colorlinks=true,linkcolor=red,urlcolor=red,citecolor=red,anchorcolor=red}
 \urlstyle{rm}
 
 \renewcommand{\baselinestretch}{1.2}
-
 \setlength{\fboxsep}{.5em}
 % \setlength{\fboxrule}{1pt}
-\newcommand{\skills}[1]{\fcolorbox{red}{white}{\parbox{\linewidth}{\small \textbf{Skills:} #1}}}
+
+%%
+% Commands
+%%
+
+\newcommand{\infobox}[1]{\fcolorbox{red}{white}{\parbox{\linewidth}{\small #1}}}
+\newcommand{\languages}[1]{\textbf{Languages:} #1}
+\newcommand{\frameworks}[1]{\textbf{Frameworks:} #1}
+\newcommand{\libraries}[1]{\textbf{Libraries:} #1}
+\newcommand{\apis}[1]{\textbf{APIs:} #1}
+\newcommand{\services}[1]{\textbf{Services:} #1}
+\newcommand{\storage}[1]{\textbf{Storage:} #1}
+\newcommand{\software}[1]{\textbf{Software:} #1}
+\newcommand{\skills}[1]{\textbf{Skills:} #1}
+\newcommand{\sep}{;\enspace}
+
+%%
+% Snippets
+%%
+
+% \infobox{\languages{}\sep \frameworks{}\sep \libraries{}\sep \apis{}\sep \services{}\sep \storage{}\sep \software{}\sep \skills{}}
 
 \begin{document}
 
@@ -86,7 +109,7 @@ Two main systems were developed:\\[-1em]
 
 \vspace{1em}
 
-\skills{Java, Lucene, Neo4j, Gremlin, R, Python, Flask, \mbox{PostgreSQL}, Vue.js}\\}
+\infobox{\languages{Python, R, Java, Gremlin}\sep \frameworks{Flask, Vue.js}\sep \storage{Lucene, Neo4j, PostgreSQL}}\\}
 %------------------------------------------------
 \entry
 {2003--2010}
@@ -95,7 +118,7 @@ Two main systems were developed:\\[-1em]
 {Final grade: 14 {\footnotesize (out of 20)}, Thesis grade: 18 {\footnotesize (out of 20)}\\
 Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_thesis-2010-devezas-link_ecosystem_of_the_portuguese_blogosphere.pdf}{Link Ecosystem of the Portuguese Blogosphere}\\[-.5em]
 
-\skills{R, igraph, Perl, BerkeleyDB, Lucene}\\}
+\infobox{\languages{Perl, R}\sep \libraries{igraph}\sep \storage{BerkeleyDB, Lucene}}\\}
 %------------------------------------------------
 \entry
 {2000--2003}
@@ -121,7 +144,7 @@ Thesis: \href{http://josedevezas.com/pdf/academy/publications/theses/masters_the
 
 Hex Datum OÜ offered software-as-a-service (SaaS), as well as consulting services in the area of intelligent information systems. Our flagship product was a crypto analytics web application called Indicator Dash (indicatordash.app).\\
 
-\skills{Python, ETL, PostgreSQL, JanusGraph, \mbox{Redis}, Financial Indicators, Data Visualization, Jupyter, Time Series Forecasting, Transformers, LSTMs, Indexing and Search, Sentiment Analysis, Flask, Vue.js, Tachyons}\\}
+\infobox{\languages{Python}\sep \frameworks{Flask, Vue.js, Tachyons}\sep \storage{PostgreSQL, JanusGraph, Redis}\sep \software{Jupyter}\sep \skills{ETL, Financial Indicators, Data Visualization, Time Series Forecasting, Transformers, LSTMs, Indexing and Search, Sentiment Analysis}}\\}
 \end{entrylist}
 \begin{entrylist}
 %------------------------------------------------
@@ -145,7 +168,7 @@ Hex Datum OÜ offered software-as-a-service (SaaS), as well as consulting servic
 
 \vspace{1em}
 
-\skills{Scientific Writing, Experimental Design, Indexing and Search, Web Crawling, Twitter API, Social Media Analytics, Jupyter, PostgreSQL, MongoDB, Java, Lucene, Neo4j, Gremlin, R, igraph, Python, Scrapy, NetworkX, Pandas, SQLAlchemy, Flask, Vue.js, Spectre.css, Bulma}\\[.5em]}
+\infobox{\languages{Java, Gremlin, R, Python}\sep \frameworks{Scrapy, SQLAlchemy, Flask, Vue.js, Spectre.css, Bulma}\sep \libraries{igraph, NetworkX, Pandas}\sep \apis{Twitter API}\sep \storage{PostgreSQL, MongoDB, Lucene, Neo4j}\sep \software{Jupyter}\sep \skills{Scientific Writing, Experimental Design, Indexing and Search, Web Crawling and Scraping, Social Media Analytics}}\\[.5em]}
 %------------------------------------------------
 \entry
 {2017--2018}
@@ -162,7 +185,7 @@ Lectured two semesters on:\\[-.5em]
 
 \vspace{1em}
 
-\skills{Educational Content Creation, Slide Presentation, Student Assessment, Gephi, KNIME, SQLite, MongoDB}\\[.5em]}
+\infobox{\storage{SQLite, MongoDB}\sep \software{Gephi, KNIME}\sep \skills{Educational Content Creation, Slide Presentation, Student Assessment}}\\[.5em]}
 %------------------------------------------------
 \entry
 {2014--2015}
@@ -174,7 +197,7 @@ INTERRELATE was a data analytics and social media monitoring and management comp
 \end{entrylist}
 \begin{entrylist}
 \entry{}{}{}{
-\skills{Social Media Analytics, Twitter API, Facebook API, Web Crawling, PostgreSQL, R, Python, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, SMTP, DNS, Nginx, Log Monitoring, Support Tickets, PayPal Payment Services}\\[.5em]}
+\infobox{\languages{Python, R}\sep \apis{Twitter API, Facebook API, PayPal Payment Services}\sep \services{SMTP, DNS, Nginx, Support Tickets}\sep \storage{PostgreSQL}\sep \skills{Social Media Analytics, Web Crawling and Scraping, Anomaly Detection, Statistical Smoothing, Regression, Classification, Clustering, Graph Analytics, Automated Reporting, Data Visualization, Systems Integration, Web Development, Systems Administration, Backup Strategies, Firewall Rules, Log Monitoring}}\\[.5em]}
 %------------------------------------------------
 \entry
 {2012--2013}
@@ -184,7 +207,7 @@ INTERRELATE was a data analytics and social media monitoring and management comp
 
 Research and development of music discovery and recommendation techniques supported on a graph-based neighborhood approach, as well as on latent factor models based on matrix factorization algorithms. Development of methodologies to combine knowledge from different dimensions, including not only user profile, content and context features, but also social features, such as community structure. Related tasks required work on data mining, multimodal network analysis and community detection, and information retrieval.\\
 
-\skills{Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics, Neo4j, Gremlin, HDF5, Python, SciPy, PyMF}\\[.5em]}
+\infobox{\languages{Python, Gremlin}\sep \libraries{SciPy, PyMF}\sep \storage{Neo4j, HDF5}\sep \skills{Recommender Systems, Music Recommendation, Collaborative Filtering, Content Filtering, Graph Analytics}}\\[.5em]}
 %------------------------------------------------
 \entry
 {2011--2012}
